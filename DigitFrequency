@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() { 
+    int countNoOfDigit,i,k;
+    char digitAndAlphabet[1000],temp[10]={'0','1','2','3','4','5','6','7','8','9'};
+    gets(digitAndAlphabet);
+    for(k=0;k<10;k++){
+    countNoOfDigit=0;
+    for(i=0;i<strlen(digitAndAlphabet);i++){
+    if(digitAndAlphabet[i]==temp[k])
+    countNoOfDigit++;
+    } 
+    printf("%d ",countNoOfDigit);
+    }
+    return 0;
+}
