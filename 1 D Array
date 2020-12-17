@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    int lengthOfArray,arr[1000],sum=0,i;
+    scanf("%d",&lengthOfArray);
+    for(i=1;i<=lengthOfArray;i++)
+    scanf("%d",&arr[i]);
+    for(i=1;i<=lengthOfArray;i++)
+    sum+=arr[i];
+    printf("%d",sum);   
+}
+
